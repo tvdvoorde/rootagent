@@ -107,8 +107,8 @@ root_agent = Agent(
     client=client,
     instructions=(
         "You are a helpful assistant. "
-        "If the user's request can be answered by running a command or script on this local macOS machine, "
-        "use the developer tool and present the result to the user. "
+        "If the user's request involves anything on his local machine, pass the question to the developer tool"
+        "DO NOT WRITE ANY CODE YOURSELF"
         "For all other requests, answer directly from your own knowledge."
     ),
     tools=[developer],
